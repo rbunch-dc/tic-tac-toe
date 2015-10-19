@@ -1,62 +1,71 @@
-<!-- - 3x3 grid
---- div/button/span
-- add a button inside each tile
---- X button
---- Y button
-OR
-- add a click event to each tile
---- onclick change it to x or y
-- win_array = 
-[ 
-	[ 1a, 2a, 3a ]
-	[ 1b, 2b, 3b ]
-	[ 1c, 2c, 3c ]
-	[ 1a, 2b, 3c ]
-	[ 3a, 2b, 1c ]
-	[ 1 1 1 ]
-	[ 2 2 2 ]
-	[ 3 3 3 ]
-]
- -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-	
-	<div id="ttt-wrapper">
-		<h1>Tic Tac Toe</h1>
-		<div id="ttt-message">Your Turn</div>
 
-		<div id="ttt-board">
+    <head>
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-			<div class="ttt-row">
-				<button id="ttt-a1">X</button>
-				<button id="ttt-a2">X</button>
-				<button id="ttt-a3">X</button>
-			</div>
+    <body>
 
-			<div class="ttt-row">
-				<button id="ttt-b1">X</button>
-				<button id="ttt-b2">X</button>
-				<button id="ttt-b3">X</button>
-			</div>
+        <h1>Tic Tac Toe</h1>
 
-			<div class="ttt-row">
-				<button id="ttt-c1">X</button>
-				<button id="ttt-c2">X</button>
-				<button id="ttt-c3">X</button>
-			</div>
+        <p id="ttt_message">
+            Your Turn
+        </p>
 
-		</div>
-	</div>
+        <div id="ttt_board">
 
+            <div class="ttt_row">
+                <button id="ttt_A1">
+                    <span class="ttt_label">Top Left</span>
+                    <span class="ttt_status">Empty</span>
+                </button>
+                <button id="ttt_A2">
+                    <span class="ttt_label">Top Center</span>
+                    <span class="ttt_status">Empty</span>
+                </button>
+                <button id="ttt_A3">
+                    <span class="ttt_label">Top Right</span>
+                    <span class="ttt_status">Empty</span>
+                </button>
+            </div> <!-- @end .ttt_row -->
 
-</body>	
+            <div class="ttt_row">
+                <button id="ttt_B1">
+                    <span class="ttt_label">Middle Left</span>
+                    <span class="ttt_status">Empty</span>
+                </button>
+                <button id="ttt_B2">
+                    <span class="ttt_label">Middle Center</span>
+                    <span class="ttt_status">Empty</span>
+                </button>
+                <button id="ttt_B3">
+                    <span class="ttt_label">Middle Right</span>
+                    <span class="ttt_status">Empty</span>
+                </button>
+            </div> <!-- @end .ttt_row -->
+
+            <div class="ttt_row">
+                <button id="ttt_C1">
+                    <span class="ttt_label">Bottom Left</span>
+                    <span class="ttt_status">Empty</span>
+                </button>
+                <button id="ttt_C2">
+                    <span class="ttt_label">Bottom Center</span>
+                    <span class="ttt_status">Empty</span>
+                </button>
+                <button id="ttt_C3">
+                    <span class="ttt_label">Bottom Right</span>
+                    <span class="ttt_status">Empty</span>
+                </button>
+            </div> <!-- @end .ttt_row -->
+
+        </div> <!-- @end #ttt_board -->
+
+        <script src="scripts.js"></script>
+
+    </body>
 </html>
-
-
