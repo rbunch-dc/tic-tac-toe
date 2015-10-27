@@ -1,4 +1,4 @@
-//******************************
+//****************************** 
 // Tic Tac Toe - Scripts
 //******************************
 
@@ -275,3 +275,56 @@ for (var i = 0; i < buttons.length; i++) {
 
 // Begin game with Player's turn
 playTurn();
+
+// ALGORITHIM PROBLEM MAKE A TIC TAC TOE GRID THAT WILL GIVE YOU ALL THE POSSIBLE WINNING SOLUTIONS NO MATTER THE SIZE OF THE GRID
+
+// var gridSize = 0;
+// var winnerHoriz =[];
+// var winnerVert = [];
+// var winnerDiag = [];
+// var winner = [];
+// var totalSquares = gridSize*gridSize;
+
+// for (i = 0; i < gridSize <= gridSize*gridSize; i++) {
+//     // Horozontl winners
+//     winnerHoriz.push(i)
+//     if(i % gridSize == 0) {
+//         winner.push(winnerHoriz);
+//         winnerHoriz = [];
+//     }
+// }
+
+// for (i = 1; i <= gridSize; i++) {
+//     for (j = 0; j < gridSize; j++) {
+//         winnerVert.push(j + gridSize + i);
+//     }
+//     winner.push(winnerVert);
+//     winnerVert =[];
+// }
+// for (i=1; i <=gridSize; i++) {
+//     winnerDiag((i-1)*gridSize);
+// }
+
+// for (i=1; i <=gridSize; i++) {
+//     winnerDiag((i*gridSize)- (i-1));
+// }
+
+// for(i =1; i<= totalSquares; i+= gridSize+1) {
+//     winnerDiag.push(i)
+// }
+// winner.push(winnerDiag);
+// winnerDiag = [];
+
+// for(i = gridSize; i == totalSquares; i+= gridSize+1) {
+//     winnerDiag.push(i)
+// }
+
+// winner.push(winnerDiag)
+
+// for (i = 1; i <= totalSquares; i += gridSize) {
+//     winnerDiag.push(i);
+// }
+// winner.push(winnerDiag);
+// winnerDiag = [];
+
+// for (i = gridSize; i <= totalSquares)
